@@ -3,7 +3,7 @@ title: ModelRect
 order: 8
 ---
 
-A built-in node modelRect has the default style as below, the label is drawed on the center of it. <br />
+A built-in node modelRect has the default style as below, the label is drawn on the center of it. <br />
 
 <img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*XZiKQbvTSS0AAAAAAAAAAABkARQnAQ' width='223' height='102' alt='img' />
 
@@ -13,7 +13,7 @@ A built-in node modelRect has the default style as below, the label is drawed on
 
 ## Usage
 
-As stated in [Built-in Nodes](/en/docs/manual/middle/elements/nodes/defaultNode) , there are two ways to configure the node: Configure it when instantiating a Graph globally; Configure it in the data.
+As stated in [Built-in Nodes](/en/docs/manual/middle/elements/nodes/defaultNode), there are two ways to configure the node: Configure it when instantiating a Graph globally; Configure it in the data.
 
 ### 1 Global Configure When Instantiating a Graph
 
@@ -26,7 +26,7 @@ const graph = new G6.Graph({
   height: 600,
   defaultNode: {
     type: 'modelRect',
-    // Other configuraltions
+    // Other configurations
   },
 });
 ```
@@ -132,7 +132,7 @@ graph.render();
 
 ### labelCfg
 
-`labelCfg` is an object to configure the label of the node. The [Node Common Label Configurations](/en/docs/manual/middle/elements/nodes/defaultNode/#label-and-labelcfg) are available. Base on the code in [style](#style) section, we add `labelCfg` to `defaultNode`.<br /><img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*x_XKQq4m3IkAAAAAAAAAAABkARQnAQ' width=150 alt='img'/>
+`labelCfg` is an object to configure the label of the node. The [Node Common Label Configurations](/en/docs/manual/middle/elements/nodes/defaultNode/#label-and-labelcfg) are available. Based on the code in the [style](#style) section, we add `labelCfg` to `defaultNode`.<br /><img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*x_XKQq4m3IkAAAAAAAAAAABkARQnAQ' width=150 alt='img'/>
 
 ```javascript
 const data = {
@@ -155,15 +155,15 @@ const graph = new G6.Graph({
 
 ### descriptionCfg
 
-⚠️**Attension:** _It will be supported after V3.3._
+⚠️**Attention:** _It will be supported after V3.3._
 
-`descriptionCfg` is an object to configure the label of the node. The [Node Common Label Configurations](/en/docs/manual/middle/elements/nodes/defaultNode/#label-and-labelcfg) are available. Besides, descriptionCfg has special attribute:
+`descriptionCfg` is an object to configure the label of the node. The [Node Common Label Configurations](/en/docs/manual/middle/elements/nodes/defaultNode/#label-and-labelcfg) are available. Besides, descriptionCfg has a special attribute:
 
 | Name       | Description                                        | Type   | Remark         |
 | ---------- | -------------------------------------------------- | ------ | -------------- |
 | paddingTop | The padding from the description to the label text | Number | `0` by default |
 
-Base on the code in [style](#style) section, we add `descriptionCfg` to `defaultNode`
+Based on the code in the [style](#style) section, we add `descriptionCfg` to `defaultNode`
 
 ```javascript
 const data = {
@@ -192,7 +192,7 @@ const graph = new G6.Graph({
 | Name      | Description                             | Type    | Remark                 |
 | --------- | --------------------------------------- | ------- | ---------------------- |
 | top       | Whether to show the top small circle    | Boolean | `false` by default     |
-| bottom    | Whether to show the bototm small circle | Boolean | `false` by default     |
+| bottom    | Whether to show the bottom small circle | Boolean | `false` by default     |
 | left      | Whether to show the left small circle   | Boolean | `false` by default     |
 | right     | Whether to show the right small circle  | Boolean | `false` by default     |
 | size      | The size of the small circles           | Number  | `3` by default         |
@@ -200,7 +200,7 @@ const graph = new G6.Graph({
 | stroke    | The stroke color of the small circles   | String  | `'#72CC4A'` by default |
 | lineWidth | The line width of the small circles     | Number  | `1` by default         |
 
-Base on the code in [style](#style) section, we add `linkPoints` to `defaultNode`.<br /><img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*Tp2WQ70bCGgAAAAAAAAAAABkARQnAQ' width=150 alt='img'/>
+Based on the code in the [style](#style) section, we add `linkPoints` to `defaultNode`.<br /><img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*Tp2WQ70bCGgAAAAAAAAAAABkARQnAQ' width=150 alt='img'/>
 
 ```javascript
 const data = {
@@ -234,7 +234,7 @@ const graph = new G6.Graph({
 | fill   | The filling color of the left rect | String  | `'#40a9ff'` by default |
 | radius | The border radius of the left rect | Number  | `2` by default         |
 
-Base on the code in [style](#style) section, we add `icon` to `defaultNode`.<br /><img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*yh43Sa3LeVcAAAAAAAAAAABkARQnAQ' width=150 alt='img'/>
+Based on the code in the [style](#style) section, we add `icon` to `defaultNode`.<br /><img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*yh43Sa3LeVcAAAAAAAAAAABkARQnAQ' width=150 alt='img'/>
 
 ```javascript
 const data = {
@@ -265,9 +265,9 @@ const graph = new G6.Graph({
 | img | The url of the icon image | String | <br />- The default image for `logoIcon` is <img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*KpqSS4INnRUAAAAAAAAAAABkARQnAQ' width=25 alt='img'/><br />- The default image for `stateIcon` is <img src='https://gw.alipayobjects.com/zos/basement_prod/300a2523-67e0-4cbf-9d4a-67c077b40395.svg' width=25 alt='img'/><br /> |
 | width | The width of the icon | Number | `16` by default |
 | height | The height of the icon | Number | `16` by default |
-| offset | Adjust the left/right offset of the icon | Number | <br />- The dfualt `offset` of the left `logoIcon` is `0`<br />- The dfualt `offset` of the right `stateIcon` is `-5`<br /> |
+| offset | Adjust the left/right offset of the icon | Number | <br />- The default `offset` of the left `logoIcon` is `0`<br />- The default `offset` of the right `stateIcon` is `-5`<br /> |
 
-Base on the code in [style](#style) section, we add `logoIcon` and `stateIcon` to `defaultNode` to hide the left icon and change the image for right icon.<br /><img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*pBsqR7McSiYAAAAAAAAAAABkARQnAQ' width=150 alt='img'/>
+Based on the code in the [style](#style) section, we add `logoIcon` and `stateIcon` to `defaultNode` to hide the left icon and change the image for the right icon.<br /><img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*pBsqR7McSiYAAAAAAAAAAABkARQnAQ' width=150 alt='img'/>
 
 ```javascript
 const data = {
